@@ -22,7 +22,7 @@ class BinaryHeap {
     }
 
     //using iterative approach
-    bubbleUp() {
+    bubbleUp() { // creating heap 
         let index = this.size() - 1;
 
         while (index > 0) {
@@ -49,6 +49,7 @@ class BinaryHeap {
 
     sinkDown(index) {
 
+        //
         let left = 2 * index + 1,
             right = 2 * index + 2,
             largest = index;
